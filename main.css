@@ -3,7 +3,7 @@
     display: grid;
     height: 500px;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 5rem auto;
+    grid-template-rows: 5rem minmax(10px, auto) 100px;
 }
 
 .el1 {
