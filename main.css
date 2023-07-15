@@ -12,10 +12,20 @@
     align-content: center; */
 }
 
+@media (max-width: 40rem) {
+    .container {
+        grid-template-rows: [hd-start] 5rem [hd-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end row-4-start] 150px;
+        grid-template-areas: "header header header header"
+                             "main main main main"
+                             "side side side side"
+                             "footer footer footer footer";
+    }
+}
+
 .el1 {
     background: rgba(255, 154, 72, 0.5);
-    /* grid-area: side; */
-    grid-column: col-start 1 / col-start 2;
+    grid-area: side;
+    /* grid-column: col-start 1 / col-start 2; */
     /* justify-self: center;
     align-self: center; */
 }
